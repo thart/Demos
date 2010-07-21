@@ -1,0 +1,35 @@
+<h1>Listing demos</h1>
+
+<table>
+  <tr>
+    <th>Teama</th>
+    <th>Teamb</th>
+    <th>Pov</th>
+    <th>Map</th>
+    <th>Event</th>
+    <th>Number of downloads</th>
+    <th>Moviepath</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @demos.each do |demo| %>
+  <tr>
+    <td><%= demo.teama %></td>
+    <td><%= demo.teamb %></td>
+    <td><%= demo.pov %></td>
+    <td><%= demo.map %></td>
+    <td><%= demo.event %></td>
+    <td><%= demo.number_of_downloads %></td>
+    <td><%= demo.moviepath %></td>
+    <td><%= link_to 'Show', demo %></td>
+    <td><%= link_to 'Edit', edit_demo_path(demo) %></td>
+    <td><%= link_to 'Destroy', demo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Demo', new_demo_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  teama: MyString
+  teamb: MyString
+  pov: MyString
+  map: MyString
+  event: MyString
+  number_of_downloads: 1
+  moviepath: MyString
+
+two:
+  teama: MyString
+  teamb: MyString
+  pov: MyString
+  map: MyString
+  event: MyString
+  number_of_downloads: 1
+  moviepath: MyString

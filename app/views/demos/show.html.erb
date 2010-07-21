@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Teama:</b>
+  <%= @demo.teama %>
+</p>
+
+<p>
+  <b>Teamb:</b>
+  <%= @demo.teamb %>
+</p>
+
+<p>
+  <b>Pov:</b>
+  <%= @demo.pov %>
+</p>
+
+<p>
+  <b>Map:</b>
+  <%= @demo.map %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @demo.event %>
+</p>
+
+<p>
+  <b>Number of downloads:</b>
+  <%= @demo.number_of_downloads %>
+</p>
+
+<p>
+  <b>Moviepath:</b>
+  <%= @demo.moviepath %>
+</p>
+
+
+<%= link_to 'Edit', edit_demo_path(@demo) %> |
+<%= link_to 'Back', demos_path %>

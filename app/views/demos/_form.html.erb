@@ -1,0 +1,45 @@
+<%= form_for(@demo) do |f| %>
+  <% if @demo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@demo.errors.count, "error") %> prohibited this demo from being saved:</h2>
+
+      <ul>
+      <% @demo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :teama %><br />
+    <%= f.text_field :teama %>
+  </div>
+  <div class="field">
+    <%= f.label :teamb %><br />
+    <%= f.text_field :teamb %>
+  </div>
+  <div class="field">
+    <%= f.label :pov %><br />
+    <%= f.text_field :pov %>
+  </div>
+  <div class="field">
+    <%= f.label :map %><br />
+    <%= f.text_field :map %>
+  </div>
+  <div class="field">
+    <%= f.label :event %><br />
+    <%= f.text_field :event %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_downloads %><br />
+    <%= f.text_field :number_of_downloads %>
+  </div>
+  <div class="field">
+    <%= f.label :moviepath %><br />
+    <%= f.text_field :moviepath %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
